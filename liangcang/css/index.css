@@ -1,0 +1,331 @@
+.container{
+    width: 1578px;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    background: #25292e;
+}
+.header-top{
+    height: 70px;
+    background: #25292e;
+    display: flex;
+}
+.logo{
+    margin-left: 50px;
+    margin-top: 12px;
+}
+.header-top .list{
+    margin-left: 910px;
+}
+.header-top .list ul{
+    display: flex;
+}
+.header-top .list ul span{
+    width: 1px;
+    height: 10px;
+    color: #525961;
+    line-height: 70px;
+}
+.header-top .list ul li{
+    line-height: 70px;
+}
+.header-top .list ul li a{
+    color:#666666;
+}
+.header-top .list ul li:nth-child(2){
+    margin-right: 10px;
+}
+.header-top .list ul li:nth-of-type(3){
+    margin: 0 20px;
+}
+.header-top .list ul li:nth-of-type(3):hover a{
+    color: #cccccc;
+}
+.header-top .list ul li:nth-of-type(4):hover a{
+    color: #cccccc;
+}
+.header-top .list ul li:nth-of-type(5):hover a{
+    color: #cccccc;
+}
+.header-top .list ul li:nth-of-type(6):hover a{
+    color: #cccccc;
+}
+.header-top .list ul li:nth-of-type(4){
+    margin: 0 20px;
+}
+.header-top .list ul li:nth-of-type(5){
+    margin: 0 20px;
+}
+.header-top .list ul li:nth-child(1) a{
+    color: #cccccc;
+}
+.header-top .list ul li:nth-child(2) a{
+    color: #cccccc;
+}
+            /* 二级导航 */
+.list ul li .list-box{
+    width: 400px;
+    height: 90px;
+    background: #292f34;
+    position: absolute;
+    right:160px;
+    top: 70px;
+    display: none;  
+}
+.list ul li .list-box li:nth-child(1){
+    width:400px;
+    height: 90px;
+    background: #292f34;
+    line-height: 90px;
+    text-align: center;
+    font-size: 16px;
+}
+.list ul li .list-box li:nth-child(2){
+    width:400px;
+    height:60px;
+    background: #7dbfde;
+    line-height:60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+.list ul li:hover .list-box{
+    display: block;
+    z-index: 99;
+}
+.list ul li .list-box1{
+    width: 240px;
+    height: 330px;
+    background: #292f34;
+    position: absolute;
+    right:340px;
+    top: 70px;
+    display: block;
+    display: none;
+    z-index: 99;
+}
+.list ul li .list-box1 li{
+    width: 235px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #3f4449;
+}
+.list ul li .list-box1 li:nth-child(3){
+    margin-left: 0;
+}
+.list ul li .list-box1 li:nth-child(4){
+    margin-left: 0;
+}
+.list ul li .list-box1 li:nth-child(5){
+    margin-left: 0;
+}
+.list ul li .list-box1 li:nth-child(3) a{
+    color: #ffffff;
+}
+.list ul li .list-box1 li:nth-child(4) a{
+    color: #ffffff;
+}
+.list ul li .list-box1 li:nth-child(5) a{
+    color: #ffffff;
+}
+.list ul li .list-box1 li:nth-child(6) a{
+    color: #ffffff;
+}
+.list ul li:hover .list-box1{
+    display: block;
+}
+            /* 导航  */
+
+.nav-left{
+height: 64px;
+border-bottom:5px solid #ededed;
+display: flex;
+}
+.nav-left ul{
+    display: flex;
+}
+.nav-left ul li{
+    font-size: 18px;
+    line-height: 64px;
+    margin-right: 82px;
+    text-align: center;
+}
+.nav-left ul li a{
+    color: black;
+    display: block;
+    width: 150px;
+    height: 64px;
+}
+.nav-left ul li a:hover{
+    border-bottom: 5px solid black;
+}
+.nav-right form{
+    width: 315px;
+    height: 59px;
+    margin-left: 100px;
+    line-height: 59px;
+    border: 0;
+}
+.nav-right form span{
+    margin-left: 20px;
+}
+.nav-right form .tex{
+    height: 59px;
+    width: 240px;
+    font-size: 16px;
+    border: 0;
+    visibility: hidden;
+}
+.nav-right form .sub{
+    background: url(../images/fangdajing.jpg) no-repeat;
+    width: 26px;
+    height: 26px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 5px;
+}
+    /* 轮播图 */
+#banner{
+    margin-top: 30px;
+}
+.swiper-container {
+    width: 1578px;
+    height: 469px;
+} 
+.swiper-slide img{
+    width: 1578px;
+    height: 469px;
+}
+.product{
+    height: 404px;
+    display: flex;
+    margin-top: 20px;
+}
+.product-left ul li:nth-child(2){
+    margin-top:20px;
+}
+.product-left ul li img{
+    width: 608px;
+    height: 190px;
+}
+.product-center a{
+    margin: 0 20px;
+}
+.product-right img{
+    width: 610px;
+    height: 190px;
+}
+.product-right h3:nth-child(2){
+    margin-top:20px;
+}
+.headline{
+    margin-top: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+.sales{
+    margin-top: 40px;
+}
+.sales a{
+    display: inline-block;
+    width: 32%;
+    margin-right: 16px;
+}
+.sales img{
+    width: 489px;
+    height: 562px;
+}
+.sales .content1 img:nth-child(2){
+    margin: 0 24px;
+}
+.sales .content2{
+    margin-top: 20px;
+}
+.sales .content2 img:nth-child(2){
+    margin: 0 50px;
+}
+.sales .content3 img:nth-child(2){
+    margin: 0 50px;
+}
+.sales .content4{
+    margin-top: 20px;
+}
+.sales .content4 img:nth-child(2){
+    margin: 0 50px;
+}
+.morebox{
+    height: 80px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding-top: 15px;;
+}
+.morebox a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 45%;
+    margin-right: 45%;
+    color:black;
+    font-size: 16px;
+}
+.morebox a:hover{
+    background: black;
+    color: #ffffff;
+}
+#shop{
+    background: #fbfdfe;
+}
+.shopiphone{
+    margin-top: 50px;
+}
+.shopiphone img{
+    width: 1578px;
+    height: 260px;
+}
+#footer{
+    background: #25292e;
+}
+.footer-top img{
+    width: 1578px;
+    height: 280px;
+    margin-top: 80px;
+}
+#service img{
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+.car{
+    display: flex;
+}
+.car div{
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.car div img{
+    height: 100%;
+    width: 100%;
+}
+.car p{
+    width: 60%;
+    margin-left: 20px;
+    color: #666;
+}
+.car span{
+    width: 20px;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+    color: red !important;
+}

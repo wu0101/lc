@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .box{
+                display: flex;
+                width: 500px;
+                height: 50px;
+                margin-left: 55px;
+            }
+            .box a{
+                line-height: 50px;
+            }
+            .box a:nth-child(2){
+                margin-left: 50px;
+            }
+        </style>
+</head>
+<body>
+        <img src="./images/gouwuche2.png"/>
+        <div class="box"><a>唱片机</a><a href="#" class="add">加入购物车</a></div>
+        <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+    
+            $('.add').click(function(){
+                if(localStorage.getItem('car')){
+                    let arr=JSON.parse(localStorage.getItem('car'))
+                    arr.push(2)
+                    localStorage.setItem('car',JSON.stringify(arr))
+                }else{
+                    localStorage.setItem('car',JSON.stringify([2]))
+                }
+            })
+            
+            
+        </script>
+        
+
+</body>
+</html>

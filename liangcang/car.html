@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .car {
+        width: 500px;
+        margin: 0 auto;
+      }
+      .item {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        line-height: 44px;
+        border-bottom: 1px;
+      }
+      .item div {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .item div img {
+        height: 100%;
+        width: 100%;
+      }
+      .item p {
+        width: 50%;
+        margin-left: 20px;
+        color: #666;
+      }
+      i{
+          margin-top:10px ;
+      }
+      b{
+          margin-top:10px ;
+      }
+      .item span {
+        text-align: right;
+        margin-top: 10px;
+        font-size: 20px;
+        color: red !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="car">
+      <div class="item">
+        <div>良品</div>
+        <p>简介</p>
+        <b>数量</b>
+        <span>价格</span>
+      </div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $.ajax({
+        url: "./js/data.json",
+        type: "get",
+        cache: false,
+        dataType: "json",
+        success(json) {
+        var listarr=JSON.parse(localStorage.getItem('car'))
+          console.log(json);
+          $.each(listarr, function(a, b) {
+            console.log(b);
+            $(".car").append(`
+                <div class="item">
+                    <div><img src="${json[b - 1].img}" alt=""></div>
+                    <p>${json[b - 1].title}</p>
+                    <i>1</i>
+                    <span>${json[b - 1].price}</span>
+                </div>
+            `);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
